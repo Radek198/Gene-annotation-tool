@@ -9,10 +9,10 @@ with open('goa_human_complex.gaf') as f:
         string = ''.join(lis)
         record = []
         if string.find('!'):
-            record.append(lis[2])
-            record.append(lis[5])
+            record.append(lis[6])
+            record.append(lis[9])
 
-            print(lis)
+            #print(lis)
 
             print(record)
 

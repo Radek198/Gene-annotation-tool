@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from tool.views import StartView
+from tool.views import StartView, DataAddView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('start/', StartView.as_view(), name='start')
+    url('start/', StartView.as_view(), name='start'),
+    url('data_add/', DataAddView.as_view(), name='data_add')
 ]
